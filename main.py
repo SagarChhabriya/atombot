@@ -94,7 +94,7 @@ document_chain = create_stuff_documents_chain(llm=chat_model, prompt=prompt)
 qa_chain = create_retrieval_chain(retriever=retriever, combine_docs_chain=document_chain)
 
 # Streamlit UI setup
-st.title("Atombob")
+st.title("Atomcamp bot")
 
 # Initialize chat history if not already present
 if "messages" not in st.session_state:
